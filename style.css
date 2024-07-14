@@ -71,12 +71,6 @@ nav > h3 {
     font-weight: bold;
     margin-bottom: 20px;
 }
-.image{
-    /* height: 500px;
-    width: 500px;
-    margin-left: 40px; */
-
-}
 .para{
     font-size: 14px;
     font-weight: 400;
@@ -90,7 +84,6 @@ main{
     background-color: #FFF8F3;
 }
 main{
-    /* height: 500px; */
     max-width: 1136px;
     margin: 0 , auto;
 }
@@ -105,17 +98,11 @@ main{
     font-weight: bold;
 }
 section{
-    /* height: 400px; */
-    /* width: 900px; */
     width: 750px;
 }
-/* .littile-about{
-    background-color: rgb(255, 255, 255);
-    border: 1px solid yellow;
-} */
  .item-description{
     font-weight: bold;
- }
+}
 .about-items{
     display: flex;
     justify-content: space-around;
@@ -133,10 +120,10 @@ section{
     display: flex;
     gap: 40px;
     justify-content: center;
-    margin: auto;
-    width: 100%;
-    margin-top: 100px;
-    margin-left: 40px;
+    text-align: center;
+    margin-left: 50px;
+    margin-top: 50px;
+    width: auto;
 }
 .skills{
     margin: auto;
@@ -180,11 +167,8 @@ main section{
     margin: auto;
 }
 .resume-btn{
-    /* margin: auto; */
     margin-bottom: 40px;
     margin-left: 80px;
-}
-.contact{
 }
 footer{
     padding: 130px 200px;
@@ -210,4 +194,88 @@ textarea{
     border-color: transparent;
     resize: none;
 }
+.hide{
+    display: none;
+}
+@media screen and (max-width:576px) {
+    .skill-container{
+        flex-direction: column;
+        gap: 10px;
+        justify-content: center;
+        margin: auto;
+        margin-top: none;
+    }
+    .skills{
+        margin: auto;
+        width: auto;
+    }
+    .resume-container{
+        flex-direction: column;
+        margin: auto;
+        padding: none;
+    }
+    .resume{
+        width: auto;
+    }
+    .resume-btn{
+        margin: auto;
+    }
+    footer{
+        flex-direction: column;
+        padding: 10px;
+        margin: auto;
+    }
+    .footer-column{
+        text-align: center;
+        width: auto;
+    }
+    textarea{
+        width: auto;
+    }
+    footer input[type="text"], footer input[type="email"] ,footer textarea {
+        width: auto;
+    }
+    footer input[type="text"]{
+        margin: 20px 25px;
+        width: calc((100% - 94px));
+    }
+    .about{
+        margin: auto;
+        width: auto;
+        padding: 20px;
+    }
+    .about-items{
+        flex-direction: column;
+    }
+    .header{
+        background-image: none;
+    }
 
+    nav{
+        width: auto;
+    }
+    nav ul li{
+        margin: auto 20px;
+    }
+    .banner{
+        flex-direction: column;
+        justify-content: center;
+    }
+    nav>h3{
+        margin: auto;
+        width: auto;
+    }
+    .banner-content{
+        margin: auto;
+    }
+}
+
+@media screen and (min-width:577px) and (max-width:1024px) {
+    .about{
+        margin: 50px auto;
+    }
+    .skill-container{
+        margin: auto;
+    }
+
+}
